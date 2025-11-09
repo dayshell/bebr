@@ -1,5 +1,5 @@
 import createBundleAnalyzer from '@next/bundle-analyzer';
-import { createMDX } from 'fumadocs-mdx/next';
+// import { createMDX } from 'fumadocs-mdx/next';
 import type { NextConfig } from 'next';
 
 const withAnalyzer = createBundleAnalyzer({
@@ -8,6 +8,10 @@ const withAnalyzer = createBundleAnalyzer({
 
 const config: NextConfig = {
   reactStrictMode: true,
+  output: 'standalone', // ← ВАЖНО ДОБАВЬ ЭТУ СТРОКУ
+  experimental: {
+    esmExternals: 'loose'
+  },
   logging: {
     fetches: {
       fullUrl: true,
@@ -17,7 +21,7 @@ const config: NextConfig = {
     'ts-morph',
     'typescript',
     'oxc-transform',
-    'twoslash',
+    'twoslash', 
     'shiki',
     '@takumi-rs/core',
   ],
@@ -54,6 +58,8 @@ const config: NextConfig = {
   },
 };
 
-const withMDX = createMDX();
+// Временно закомментировано из-за проблем с билдом
+// const withMDX = createMDX();
+// export default withAnalyzer(withMDX(config));
 
-export default withAnalyzer(withMDX(config));
+export default withAnalyzer(config);
