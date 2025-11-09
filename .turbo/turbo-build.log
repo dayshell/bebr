@@ -1,0 +1,74 @@
+
+> docs@0.1.3 build C:\Users\monof\Downloads\bebra\apps\docs
+> next build && pnpm run build:post
+
+ ⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of C:\Users\monof\package-lock.json as the root directory.
+ To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+ Detected additional lockfiles: 
+   * C:\Users\monof\Downloads\bebra\pnpm-lock.yaml
+
+   ▲ Next.js 16.0.1 (Turbopack)
+   - Environments: .env
+
+[MDX] generated files in 26.992700000000696ms
+   Creating an optimized production build ...
+ ✓ Compiled successfully in 24.0s
+   Running TypeScript ...
+   Collecting page data ...
+ ⚠ Using edge runtime on a page currently disables static generation for that page
+   Generating static pages (0/409) ...
+   Generating static pages (102/409) 
+   Generating static pages (204/409) 
+   Generating static pages (306/409) 
+ ✓ Generating static pages (409/409) in 7.3s
+   Finalizing page optimization ...
+
+Route (app)                                Revalidate  Expire
+┌ ○ /                                             ≈2w      1y
+├ ○ /_not-found
+├ ƒ /api/chat
+├ ƒ /api/proxy
+├ ○ /blog
+├ ● /blog/[slug]
+│ ├ /blog/2024-5-15
+│ ├ /blog/2024-5-16
+│ ├ /blog/a-mistake
+│ └ [+16 more paths]
+├ ○ /blog/rss.xml
+├ ƒ /blog/test
+├ ○ /docs
+├ ● /docs/[...slug]
+│ ├ /docs/cli/create-fumadocs-app
+│ ├ /docs/cli
+│ ├ /docs/mdx/async
+│ └ [+122 more paths]
+├ ○ /icon.png
+├ ○ /llms-full.txt
+├ ● /llms.mdx/[...slug]
+│ ├ /llms.mdx/cli/create-fumadocs-app
+│ ├ /llms.mdx/cli
+│ ├ /llms.mdx/mdx/async
+│ └ [+122 more paths]
+├ ○ /llms.txt
+├ ● /og/[...slug]
+│ ├ /og/cli/create-fumadocs-app/image.png
+│ ├ /og/cli/image.png
+│ ├ /og/mdx/async/image.png
+│ └ [+122 more paths]
+├ ○ /showcase
+├ ○ /sitemap.xml
+├ ○ /sponsors                                     ≈2h      1y
+└ ○ /static.json
+
+
+○  (Static)   prerendered as static content
+●  (SSG)      prerendered as static HTML (uses generateStaticParams)
+ƒ  (Dynamic)  server-rendered on demand
+
+
+> docs@0.1.3 build:post C:\Users\monof\Downloads\bebra\apps\docs
+> echo 'Skipping post-build on Windows'
+
+'Skipping post-build on Windows'
