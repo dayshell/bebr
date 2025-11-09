@@ -182,4 +182,4 @@ export function generateStaticParams() {
   return source.generateParams();
 }
 
-export const runtime = "edge";
+export const runtime = "nodejs";
