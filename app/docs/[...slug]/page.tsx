@@ -181,3 +181,5 @@ export async function generateMetadata(
 export function generateStaticParams() {
   return source.generateParams();
 }
+
+export const runtime = "edge";
