@@ -6,16 +6,17 @@ import {
   loader,
   multiple,
 } from 'fumadocs-core/source';
-import { openapiPlugin, openapiSource } from 'fumadocs-openapi/server';
 import { blog as blogPosts, docs } from '@/.source';
 import { lucideIconsPlugin } from 'fumadocs-core/source/lucide-icons';
-import { openapi } from '@/lib/openapi';
+import { openapiPlugin, openapiSource } from 'fumadocs-openapi/server';
+import path from 'node:path';
+import { openapi } from '@/lib/openapi'; // локальный OpenAPI объект
 
 export const source = loader(
   multiple({
     docs: docs.toFumadocsSource(),
     openapi: await openapiSource(openapi, {
-      baseDir: 'openapi/(generated)',
+      baseDir: 'openapi/(generated)', // путь для генерации исходников
     }),
   }),
   {
