@@ -116,3 +116,4 @@ export default function Layout({ children }: LayoutProps<'/'>) {
     </HomeLayout>
   );
 }
+export const runtime = 'nodejs';

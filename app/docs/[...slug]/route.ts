@@ -1,10 +1,10 @@
 import { NextRequest } from 'next/server';
 
-export const runtime = 'nodejs'; // ← ФОРСИРУЕМ NODEJS RUNTIME
+export const runtime = 'nodejs';
 
 export async function GET(
   request: NextRequest,
   { params }: { params: { slug: string[] } }
 ) {
-  // Этот файл переопределяет runtime для страницы docs/[...slug]
+  // Переопределяем runtime для этого route
 }
