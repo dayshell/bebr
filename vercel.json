@@ -1,8 +1,5 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "framework": {
-    "version": "16.0.3"
-  },
   "builds": [
     {
       "src": "apps/docs/next.config.ts",
