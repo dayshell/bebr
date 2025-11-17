@@ -22,7 +22,6 @@
         ".source/**",
         "!.contentlayer/.cache/**",
         ".next/**",
-        "!.next/cache/**",
         "dist/**",
         "out",
         "build",
