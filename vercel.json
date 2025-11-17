@@ -1,9 +1,9 @@
 {
+  "$schema": "https://openapi.vercel.sh/vercel.json",
   "builds": [
     {
       "src": "apps/docs/package.json",
       "use": "@vercel/next"
     }
-  ],
-  "cleanIds": true
+  ]
 }
