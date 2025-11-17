@@ -14,5 +14,10 @@
       "src": "/(.*)",
       "dest": "/apps/docs"
     }
-  ]
+  ],
+  "build": {
+    "env": {
+      "NEXT_PRIVATE_RUNTIME": "nodejs"
+    }
+  }
 }
