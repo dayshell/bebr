@@ -1,9 +1,18 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": {
+    "version": "16.0.3"
+  },
   "builds": [
     {
-      "src": "apps/docs/package.json",
+      "src": "apps/docs/next.config.ts",
       "use": "@vercel/next"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/apps/docs"
     }
   ]
 }
